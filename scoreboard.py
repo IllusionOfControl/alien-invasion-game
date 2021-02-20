@@ -2,6 +2,7 @@ import pygame.font
 from ship import Ship
 from pygame.sprite import Group
 
+
 class Scoreboard():
     def __init__(self, settings, screen, stats):
 

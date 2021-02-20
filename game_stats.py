@@ -1,4 +1,4 @@
-class GameStats():
+class GameStats:
     def __init__(self, settings):
         self.settings = settings
         self.game_active = False
@@ -11,4 +11,3 @@ class GameStats():
         self.ships_left = self.settings.ship_limit
         self.score = 1
         self.level = 1
-        

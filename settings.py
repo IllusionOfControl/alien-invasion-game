@@ -25,7 +25,7 @@ class Settings(object):
         self.alien_speed_factor = 1
         self.alien_points = 50
 
-    def incrase_speed(self):
+    def increase_speed(self):
         self.ship_speed_factor *= self.speedup_scale
         self.alien_speed_factor *= self.speedup_scale
         self.bullet_speed_factor *= self.speedup_scale

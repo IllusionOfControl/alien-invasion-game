@@ -1,10 +1,8 @@
-import sys
 import pygame
 import game_functions as gf
 
 from settings import Settings
 from ship import Ship
-from alien import Alien
 from game_stats import GameStats
 from button import Button
 from scoreboard import Scoreboard
