@@ -126,7 +126,7 @@ def check_aliens_bottom(settings, screen, ship, bullets, aliens, stats, scoreboa
     screen_rect = screen.get_rect()
     for alien in aliens.sprites():
         if alien.rect.bottom >= screen_rect.bottom:
-            ship_hit(settingws, screen, ship, bullets, aliens, stats, scoreboard)
+            ship_hit(settings, screen, ship, bullets, aliens, stats, scoreboard)
             break
 
 def check_play_button(settings, stats, play_button, mouse_x, mouse_y, scoreboard):
@@ -152,6 +152,7 @@ def check_bullet_alien_collisions(settings, screen, ship, bullets, aliens, stats
     if len(aliens) == 0:
         settings.incrase_speed()
         stats.level +=1
+        scoreboard.prep_level()
         bullets.empty()
         create_fleet(settings, screen, ship, aliens)
 
