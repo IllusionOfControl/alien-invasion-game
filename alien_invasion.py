@@ -23,7 +23,7 @@ def run_game():
     aliens = Group()
     stats = GameStats(settings)
     play_button = Button(settings, screen, "Play")
-    scoreboard = Scoreboard(settings, screen, stats)
+    scoreboard = Scoreboard(screen, settings, stats)
 
     gf.create_fleet(settings, screen, ship, aliens)
 

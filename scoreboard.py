@@ -1,10 +1,12 @@
+from dataclasses import dataclass
+
 import pygame.font
 from ship import Ship
 from pygame.sprite import Group
 
 
-class Scoreboard():
-    def __init__(self, settings, screen, stats):
+class Scoreboard:
+    def __init__(self, screen, settings, stats):
 
         self.screen = screen
         self.screen_rect = screen.get_rect()

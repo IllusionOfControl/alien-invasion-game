@@ -162,7 +162,7 @@ def check_bullet_alien_collisions(settings, screen, ship, bullets, aliens, stats
         check_high_score(stats, scoreboard)
 
     if len(aliens) == 0:
-        settings.incrase_speed()
+        settings.increase_speed()
         stats.level +=1
         scoreboard.prep_level()
         bullets.empty()
