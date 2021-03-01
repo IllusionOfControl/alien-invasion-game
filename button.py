@@ -1,5 +1,6 @@
 import pygame.font
 
+
 class Button():
     def __init__(self, settings, screen, msg):
         self.screen = screen

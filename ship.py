@@ -1,6 +1,7 @@
 import pygame
 from pygame.sprite import Sprite
 
+
 class Ship(Sprite):
     def __init__(self, screen, settings):
         super().__init__()
@@ -24,7 +25,7 @@ class Ship(Sprite):
     def update(self):
         if self.moving_right and self.rect.right < self.screen_rect.right:
             self.center += self.settings.ship_speed_factor
-        elif self.moving_left and self.rect.left > self.screen_rect.left:
+        if self.moving_left and self.rect.left > self.screen_rect.left:
             self.center -= self.settings.ship_speed_factor
 
         self.rect.centerx = self.center
